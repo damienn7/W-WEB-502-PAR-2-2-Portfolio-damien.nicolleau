@@ -55,12 +55,7 @@ body {
 
 
 
-.container-footer{
-    background-color: #242038;
-    width: auto;
-    height: auto;
-    overflow-x: hidden;
-}
+
 
 #pastille-menu{
     font-family: 'ubisoftsans-bold';
@@ -236,8 +231,8 @@ li{
   }
 
   .bg-pic{
-    width: 190px;
-    height: 190px;
+    width: 210px;
+    height: 210px;
     position: absolute;
     z-index: 85;
     top: 5%;
@@ -245,8 +240,8 @@ li{
   }
 
   .profil-pic{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     position: relative;
     z-index: 100;
@@ -587,6 +582,17 @@ li{
         display:none;
     }
 
+    .container-footer{
+        background-color: #242038;
+        overflow-x: hidden;
+        position: absolute;
+        top:140%;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        padding: 80px;
+    }
+
     .li{
         margin: 5px;
         width: 15%;
@@ -622,13 +628,13 @@ li{
         border-top: 2px solid #725AC1;
         border-bottom: 2px solid #725AC1;
         background-color: #242038;
-        height: 250px;
+        height: 350px;
         width: 100%;
         position: absolute;
         top: 700px;
         left: 0;
         margin-top: 50px;
-        padding: 20px;
+        padding: 40px;
     }
 
     .project-card{
@@ -638,6 +644,7 @@ li{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .card{
@@ -648,10 +655,22 @@ li{
         padding: 10px;
     }
 
+    .card:hover{
+        border: 2px solid #2c79e7;
+        background-color: #2c79e7;
+        color: #F7ECE1;
+    }
+
     .img-project{
-        height: 140px;
+        height: 120px;
+        margin-top: 7px;
         width: 230px;
         border-radius: 10px;
+    }
+
+    .twitter{
+        width: 150px;
+        margin-left: 45px;
     }
 
 }
@@ -767,13 +786,26 @@ li{
         overflow-x: hidden;
     }
 
+    .container-footer{
+        background-color: #242038;
+        overflow-x: hidden;
+        position: absolute;
+        top:400%;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        padding: 80px;
+
+    }
+
     .project{
         border-top: 2px solid #725AC1;
+        border-bottom: 2px solid #725AC1;
         background-color: #242038;
-        height: 250px;
+        height: 900px;
         width: 100%;
         position: absolute;
-        top: 500px;
+        top: 550px;
         left: 0;
         margin-top: 40px;
         padding: 20px;
@@ -782,5 +814,36 @@ li{
     .project-card{
         width: auto;
         height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
     }
+
+    .img-project{
+        height: 100px;
+        margin-top: 7px;
+        width: 210px;
+        border-radius: 10px;
+    }
+
+    .twitter{
+        width: 120px;
+        margin-left: 45px;
+    }
+
+    .card{
+        border: 2px dashed #2c79e7;
+        height: 170px;
+        width: 250px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    /* .card:hover{
+        border: 2px solid #2c79e7;
+        background-color: #2c79e7;
+        color: #F7ECE1;
+    } */
 }
